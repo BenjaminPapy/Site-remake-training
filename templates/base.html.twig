@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/base-style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <p class="banner-text">H-BANNER</p>
+            </div>
+            <div class="wrapper">
+                <div class="one">
+                    <img src="images/logo.svg" alt="logo"/>
+                </div>
+                <div class="two">
+                    <div class="searchbar">
+                    </div>
+                </div>
+                <div class="three">
+                    <div class="cat">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                        <p>10% offerts !</p>
+                    </div>
+                    <div class="cat">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Boutiques</p>
+                    </div>
+                    <div class="cat">
+                        <i class="fa-regular fa-user"></i>
+                        <p>Mon espace</p>
+                    </div>
+                    <div class="cat">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>France (€)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-choices">
+                <div class="cat-m">
+                    <p>Cadeaux</p>
+                </div>
+                <div class="cat-m">
+                    <p>Visage</p>
+                </div>
+                <div class="cat-m">
+                    <p>Corps</p>
+                </div>
+                <div class="cat-m">
+                    <p>Rasage & Barbe</p>
+                </div>
+                <div class="cat-m">
+                    <p>Cheveux</p>
+                </div>
+                <div class="cat-m">
+                    <p>Dents</p>
+                </div>
+                <div class="cat-m">
+                    <p>Parfums</p>
+                </div>
+                <div class="cat-m">
+                    <p>Kits</p>
+                </div>
+                <div class="cat-m">
+                    <p>Magazine</p>
+                </div>
+                <div class="cat-m">
+                    <p>Diagnostic visage</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            {% block body %}
+            {% endblock %}
+        </main>
+        <footer>
+            <h2>HORACE</h2>
+            <div class="wrapper-footer">
+                <div class="wrap-foot-cat">
+                    <h3>SHOP HORACE</h3>
+                    <ul>
+                        <li>Visage</li>
+                        <li>Corps</li>
+                        <li>Rasage & barbe</li>
+                        <li>Cheveux</li>
+                        <li>Dents</li>
+                        <li>Parfum</li>
+                        <li>Kits</li>
+                        <li>Diagnostic visage</li>
+                    </ul>
+                </div>
+                <div class="wrap-foot-cat">
+                    <h3>EXPLORER HORACE</h3>
+                    <ul>
+                        <li>Notre philosophie</li>
+                        <li>Où nous trouver ?</li>
+                        <li>Magazine</li>
+                        <li>Vos avis</li>
+                        <li>Jobs</li>
+                        <li>Presse</li>
+                        <li>Réduction étudiant</li>
+                        <li>Jeu Monopoly chez McDonald's</li>
+                    </ul>
+                </div>
+                <div class="wrap-foot-cat">
+                    <h3>SERVICES EN LIGNE</h3>
+                    <ul>
+                        <li>Livraison et retour</li>
+                        <li>Suivi de commandes</li>
+                        <li>Aide et FAQ</li>
+                        <li>Paiement sécurisé</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="wrap-foot-cat">
+                    <h3>Rendez-nous visite aussi en boutiques !</h3>
+                    <ul class="ul-underline">
+                        <li>Paris Marais : 68 rue Vieille du Temple, 75003</li>
+                        <li>Paris Bastille : 33 Rue du Faubourg Saint-Antoine, 75011</li>
+                        <li>Paris Abbesses : 22 Rue des Abbesses, 75018</li>
+                        <li>Paris Galeries Lafayette : 40 Boulevard Haussmann, 75009</li>
+                        <li>Lyon : 49 Rue de la République, 69002</li>
+                        <li>Touulouse : 16 Rue Saint-Antoine du T, 31000</li>
+                        <li>Bordeaux : 108 Rue Sainte-Catherine, 33000</li>
+                        <li>Lille : 15 Rue Lepelletier, 59800</li>
+                        <li>Nantes : 7 Rue de la Marne, 44000</li>
+                    </ul>
+                    <div class="footer-rs-logo">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                    <p>Voir les 57919 avis de nos clients sur nos produits</p>
+                </div>
+                <p class="footer-cgv">© 2021 Horace. Tous droits réservés. CGV & mentions légales</p>
+            </div>
+        </footer>
+    </body>
+</html>
